@@ -1,0 +1,105 @@
+$fullsize: 100%;
+@mixin container {
+    max-width: 1920px;
+    min-width: 1280px;
+    width: 100%;
+}
+@mixin outer-large-padding {
+    padding: 96px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.wrapper {
+    @include container
+}
+section, #intro {
+    @include outer-large-padding
+}
+#intro, #contact {
+    height: 700px;
+}
+.small-circle-blue {
+    background: #74bddd;
+    width: 20px;
+    height: 20px;
+}
+.full-height {
+    height: $fullsize;
+}
+.gnb {
+    position: fixed;
+    top: 0px;
+    background: #97cfe8;
+    z-index: 1000;
+    @include container
+}
+
+.full-width {
+    width: $fullsize;
+}
+.label-gray-width {
+    width: 120px;
+}
+.half-width-size {
+    width: 50px;
+}
+.slightly-over-half {
+    width: 60px;
+}
+.over-half-width {
+    width: 70px;
+}
+.slightly-less-full {
+    width: 90px;
+}
+.light-blue-background {
+    background: #e5f2fa;
+}
+.project-img-size {
+    width: 80%;
+}
+.btn-outline-blue {
+    color: #0174aa;
+    border: 1px solid #0174aa;
+}
+.btn-outline-blue:hover {
+    background-color: #0174aa;
+    color: #fff;
+}
+.text-blue {
+    color: #0174aa;
+}
+.text-blue:hover {
+    color:#005a84;
+}
+.copyright {
+    height: 60px;
+}
+.padding-y-axis {
+    padding: 0px 96px;
+}
+.font-size-sm {
+    font-size: 15px;
+}
+.font-size-md {
+    font-size: 18px;
+}
+.font-md-plus {
+    font-size: 20px;
+}
+.font-size-lg {
+    font-size: 22px;
+}
+.font-lg-plus {
+    font-size: 30px;
+}
+.font-size-xl {
+    font-size: 50px;
+}
+.font-size-xxl {
+    font-size: 61px;
+}
